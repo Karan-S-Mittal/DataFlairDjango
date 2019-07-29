@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HomePage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <center>
+     <nav class="navbar navbar-default navbar-static-top" style = 'background-color: dodgerblue;'>
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a class="navbar-brand btn-info btn-md" href="{% url 'homepage' %}">HomePage</a></li>
+          <li><a class="navbar-link btn-warning btn-md" href="{% url 'admin:index' %}">Admin</a></li>
+          <li><a class="navbar-link btn-md btn-warning" href="{% url 'otherpage' %}">Other</a></li>
+          <li><a class="navbar-link btn-success btn-lg" href="https://data-flair.training/blogs/category/django/">DataFlair</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+          <h1 class = "bg-primary">DataFlair Django Tutorials</h1>
+{% block body_block %}
+<h1>Welcome to the Home-Page</h1>
+<h2> search for others/ </h2>
+<h1>We have implemented Bootstrap here</h1>
+<h2>we are in the block of home page</h2>
+{% endblock %}
+</center>
+</body>
+</div></center></body></html>
